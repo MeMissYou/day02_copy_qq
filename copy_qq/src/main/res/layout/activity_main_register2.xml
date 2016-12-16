@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.copy_qq.com.example.copy_qq.login.MainActivity_register2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#3388ff">
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/back"
+            android:background="@null"
+            android:text="返回"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:text="验证手机号码"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:id="@+id/tv_register"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="19sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#C0C0C0"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:hint="请输入短信验证码"
+            android:textColor="#c0c0c0"
+            android:maxLength="4"
+            android:inputType="phone"
+            android:background="@null"
+            android:textSize="18sp"
+            android:id="@+id/edt_register2"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#C0C0C0"
+
+            />
+        <Button
+            android:text="发送"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:textSize="22sp"
+            android:id="@+id/send_sms"
+            android:textColor="#C0C0C0"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#C0C0C0"
+        />
+    <Button
+        android:text="完成"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:textSize="22sp"
+        android:id="@+id/button_registe2_finish"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_border"/>
+</LinearLayout>

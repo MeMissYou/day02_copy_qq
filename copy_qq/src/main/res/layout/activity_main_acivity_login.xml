@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_acivity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context="com.example.copy_qq.com.example.copy_qq.login.MainAcivity_login">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView_login"
+            android:layout_gravity="center"
+            android:layout_marginTop="75dp"
+         />
+        <EditText
+           android:id="@+id/name"
+           android:layout_marginTop="40dp"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:background="#ffffff"
+           android:hint=" QQ/手机号/邮箱"
+            android:maxLength="11"
+           android:inputType="number"
+           android:textColor="#c0c0c0"/>
+
+        <Button
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+        />
+
+        <EditText
+           android:id="@+id/pwd"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:background="#ffffff"
+           android:hint=" 密码"
+            android:maxLength="20"
+           android:inputType="textPassword"
+           android:digits="1234567890.,/ qwertyuioplkjhgfdsazxcvbnm,./[]';"
+           android:textColor="#c0c0c0"/>
+
+        <Button
+            android:layout_margin="20dp"
+            android:layout_marginTop="5dp"
+            android:text="登  录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_login"
+            android:background="@drawable/bg_border"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+           />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+                <Button
+                    android:id="@+id/button_no_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="无法登录？"
+                    android:textColor="#3388ff"
+                    android:background="@null"
+                    android:textSize="18dp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_user_login"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text="新用户注册"
+                    android:textColor="#3388ff"
+                    android:background="@null"
+                    android:textSize="18dp"
+                    />
+
+                <Button
+                    android:text="服务条款"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3388ff"
+                    android:background="@null"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/button_login_agree"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18dp"/>
+        </RelativeLayout>
+
+
+</LinearLayout>
