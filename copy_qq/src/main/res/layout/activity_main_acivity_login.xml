@@ -23,8 +23,9 @@
            android:layout_width="match_parent"
            android:layout_height="45dp"
            android:background="#ffffff"
-           android:hint=" QQ/手机号/邮箱"
-            android:maxLength="11"
+           android:hint="   QQ/手机号/邮箱"
+           android:textColorHint="#c0c0c0"
+           android:maxLength="11"
            android:inputType="number"
            android:textColor="#c0c0c0"/>
 
@@ -38,8 +39,9 @@
            android:layout_width="match_parent"
            android:layout_height="45dp"
            android:background="#ffffff"
-           android:hint=" 密码"
-            android:maxLength="20"
+           android:hint="   密码"
+           android:textColorHint="#c0c0c0"
+           android:maxLength="20"
            android:inputType="textPassword"
            android:digits="1234567890.,/ qwertyuioplkjhgfdsazxcvbnm,./[]';"
            android:textColor="#c0c0c0"/>

@@ -1,5 +1,6 @@
 package com.example.copy_qq.com.example.copy_qq.login;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 import com.example.copy_qq.R;
 
-public class MainActivity_register2 extends AppCompatActivity {
+public class MainActivity_register2 extends Activity {
 private Button btn_send_sms;
     private EditText edt_send;
     private  Button btn_send_finish;

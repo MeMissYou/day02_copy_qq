@@ -5,28 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context="com.example.copy_qq.com.example.copy_qq.login.MainActivity_register2">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="65dp"
+        android:orientation="horizontal"
         android:background="#3388ff">
         <Button
-            android:layout_width="110dp"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:drawableLeft="@mipmap/back"
+            android:drawableLeft="@mipmap/back_m"
             android:background="@null"
             android:text="返回"
             android:textSize="18sp"
             android:textColor="#ffffff"
             />
+
         <TextView
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="35dp"
             android:text="验证手机号码"
             android:layout_width="wrap_content"
-            android:layout_height="65dp"
+            android:layout_height="40dp"
             android:id="@+id/tv_register"
-            android:layout_gravity="center"
-            android:gravity="center"
             android:textColor="#ffffff"
             android:textSize="19sp"/>
     </LinearLayout>
@@ -66,12 +68,12 @@
         <Button
             android:text="发送"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:textSize="22sp"
             android:id="@+id/send_sms"
             android:textColor="#C0C0C0"
-            android:background="@null"
+            android:background="@drawable/bg_border"
             />
 
     </LinearLayout>
