@@ -10,7 +10,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+
+            />
         <activity android:name=".com.example.copy_qq.login.MainAcivity_login" />
         <activity android:name=".com.example.copy_qq.login.Main_Welcome">
             <intent-filter>
