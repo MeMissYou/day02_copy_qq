@@ -1,6 +1,7 @@
 package com.example.copy_qq.com.example.copy_qq.login;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.copy_qq.MainActivity;
 import com.example.copy_qq.R;
 
 public class MainActivity_register2 extends Activity {
@@ -68,7 +70,9 @@ private Button btn_send_sms;
                 if (edtString.equals("")){
                     btn_send_finish.setBackgroundResource(R.drawable.btn_null);
                  }else{
-                    Toast.makeText(MainActivity_register2.this,"进入qq主页",Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(MainActivity_register2.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
             }
         });
