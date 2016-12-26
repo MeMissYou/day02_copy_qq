@@ -1,16 +1,25 @@
  package com.example.copy_qq;
+                import android.graphics.Bitmap;
+                import android.graphics.BitmapFactory;
+                import android.graphics.Color;
+                import android.media.Image;
+                import android.os.Build;
                 import android.os.Bundle;
                 import android.support.v4.app.FragmentActivity;
                 import android.support.v4.app.FragmentTabHost;
                 import android.view.LayoutInflater;
                 import android.view.View;
+                import android.view.Window;
+                import android.view.WindowManager;
                 import android.widget.ImageView;
                 import android.widget.TabHost;
                 import android.widget.TextView;
 
+                import com.example.copy_qq.com.example.copy_qq.SlideMenu;
                 import com.example.copy_qq.com.example.copy_qq.fragment.Fragment_dynamic;
                 import com.example.copy_qq.com.example.copy_qq.fragment.Fragment_message;
                 import com.example.copy_qq.com.example.copy_qq.fragment.Fragment_people;
+                import com.example.copy_qq.com.example.copy_qq.login.CicrleDrawable;
 
  public class MainActivity extends FragmentActivity {
      /**
@@ -47,12 +56,27 @@
       *
       *
       */
+
      public void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
          setContentView(R.layout.activity_main);
-
+//         沉浸式状态栏
+         if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.KITKAT){
+//             透明通知栏
+             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//             透明导航栏
+             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+//             调用分封类，设置颜色
+             StatusBarCompat.compat(this,Color.BLUE);
+         }
+//        imageview的圆形drawable
+         ImageView iv = (ImageView) findViewById(R.id.img_menu_login);
+         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.mipmap.login);
+         iv.setImageDrawable(new CicrleDrawable(bitmap));
          initView();
+
      }
+
      private void initView() {
          mLayoutInflater = LayoutInflater.from(this);
 

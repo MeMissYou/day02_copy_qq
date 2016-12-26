@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_slide_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.copy_qq.com.example.copy_qq.SlideMenu">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:fitsSystemWindows="true"
+        android:background="@mipmap/back_menu1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="22dp"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="独孤诱惑"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView"
+            android:layout_alignBottom="@+id/img_menu_login"
+            android:layout_toEndOf="@+id/img_menu_login" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/img_menu_login"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="31dp" />
+
+        <TextView
+            android:text="常相离·心莫弃·遥星望·莫相依"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:id="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/img_menu_login"
+            android:layout_marginBottom="8dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        >
+        <Button
+
+        android:id="@+id/btn_menu_menu1"
+        android:drawableLeft="@mipmap/menu_1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:background="@null"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginLeft="30dp"
+        android:text="    激活会员"/>
+        <Button
+            android:id="@+id/btn_menu_menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:drawableLeft="@mipmap/menu_2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:text="     QQ钱包"/>
+        <Button
+            android:id="@+id/btn_menu_menu3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:drawableLeft="@mipmap/menu_3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:text="    个性装扮"/>
+        <Button
+            android:id="@+id/btn_menu_menu4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:drawableLeft="@mipmap/menu_4"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:layout_marginTop="8dp"
+            android:text="    我的收藏"/>
+        <Button
+            android:id="@+id/btn_menu_menu5"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:drawableLeft="@mipmap/menu_5"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:text="    我的相册"/>
+        <Button
+            android:id="@+id/btn_menu_menu61"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:drawableLeft="@mipmap/menu_6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:text="    我的文件"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+
+        <Button
+            android:id="@+id/btn_menu_menu7"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:drawableLeft="@mipmap/menu_7"
+            android:background="@null"
+            android:text="设置"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="9dp" />
+
+        <Button
+            android:id="@+id/btn_menu_menu8"
+            android:text="夜间"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:drawableLeft="@mipmap/menu_8"
+            android:background="@null"
+            android:layout_marginStart="81dp"
+            android:layout_alignBottom="@+id/btn_menu_menu7"
+            android:layout_toEndOf="@+id/btn_menu_menu7"
+            android:layout_alignTop="@+id/btn_menu_menu7" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:background="#c0c0c0"
+    >
+    <Button
+        android:id="@+id/message_pop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/menu_7"
+        android:text="    发起多人聊天"
+        android:background="@null"
+        />
+    <Button
+        android:id="@+id/message_pop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/menu_7"
+        android:text="    加好友"
+        android:background="@null"
+        />
+    <Button
+        android:id="@+id/message_pop3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/menu_7"
+        android:text="    扫一扫"
+        android:background="@null"
+        />
+    <Button
+        android:id="@+id/message_pop4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/menu_7"
+        android:text="    面对面"
+        android:background="@null"
+        />
+    <Button
+        android:id="@+id/message_pop5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/menu_7"
+        android:text="    付款"
+        android:background="@null"
+        />
+
+
+</LinearLayout>

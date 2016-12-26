@@ -1,6 +1,7 @@
 package com.example.copy_qq.com.example.copy_qq.login;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -9,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.copy_qq.R;
+import com.example.copy_qq.StatusBarCompat;
 
 public class MainActivity_register extends Activity {
     EditText edt ;
